@@ -9,6 +9,8 @@
   --blue-button: #1976d2;
   --icons: #40464d;
   --footer-bg: #212529;
+  --white: #fff;
+  --red-button: #e41d43;
 }
 
 .dark {
@@ -99,14 +101,20 @@ button {
   transition: 0.2s;
 }
 
-button :active,
+button:active,
 a:active {
   scale: 0.9;
 }
 
-button :hover,
+button:hover,
 a:hover {
   cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  scale: 1;
 }
 
 li {
