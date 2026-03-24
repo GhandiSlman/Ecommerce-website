@@ -3,6 +3,7 @@ header.flex .fa-solid {
 }
 
 body.cover-content {
+  color: var(--white);
   background-color: var(--footer-bg);
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -17,7 +18,10 @@ body.cover-content {
   & .name-title {
     margin-bottom: 0.2rem;
   }
- 
+  & .email-title {
+    margin-bottom: 0.2rem;
+    margin-top: 1rem;
+  }
 
   & .password-title {
     margin-bottom: 0.2rem;
@@ -39,12 +43,15 @@ body.cover-content {
     font-size: 0.8rem;
   }
 
-  
+  .email-field {
+    height: 35px;
+    width: 400px;
+    border-radius: 4px;
+  }
   .password-field {
     height: 35px;
     width: 400px;
     border-radius: 4px;
-    
   }
   .name-field {
     height: 35px;
