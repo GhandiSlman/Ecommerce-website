@@ -18,6 +18,7 @@ body.cover-content {
   & .name-title {
     margin-bottom: 0.2rem;
   }
+
   & .email-title {
     margin-bottom: 0.2rem;
     margin-top: 1rem;
@@ -31,6 +32,7 @@ body.cover-content {
   & .flex {
     margin-block: 0.8rem;
   }
+
   .checkbox {
     margin-right: 0.5rem;
   }
@@ -48,11 +50,13 @@ body.cover-content {
     width: 400px;
     border-radius: 4px;
   }
+
   .password-field {
     height: 35px;
     width: 400px;
     border-radius: 4px;
   }
+
   .name-field {
     height: 35px;
     width: 400px;
@@ -61,5 +65,142 @@ body.cover-content {
 
   .check-me-out {
     font-size: 0.8rem;
+  }
+
+  body.cover-content .social-links {
+    margin-top: 20px;
+    margin-inline: auto;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 105px;
+    height: 40px;
+    background: #fff;
+    text-align: left;
+    padding-left: 12px;
+    margin-inline: 1rem;
+    transform: rotate(-30deg) skew(25deg);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .social-links .fa-brands {
+    font-size: 18px;
+    color: #262626;
+    line-height: 40px;
+    transition: 0.5s;
+    margin-right: 8px;
+  }
+
+  .social-links span {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    font-size: 12px;
+    color: #262626;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+
+  .social-links a:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    height: 100%;
+    width: 10px;
+    background: #b1b1b1;
+    transform: rotate(0deg) skewY(-45deg);
+  }
+
+  .social-links a:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    height: 10px;
+    width: 100%;
+    background: #b1b1b1;
+    transform: rotate(0deg) skewX(-45deg);
+  }
+
+  .social-links a:hover {
+    transform: rotate(-30deg) skewX(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  .social-links li:nth-child(3) a:hover {
+    background: #1877f2;
+  }
+
+  .social-links li:nth-child(3) a:hover::before {
+    background: #145dbf;
+  }
+
+  .social-links li:nth-child(3) a:hover::after {
+    background: #0d47a1;
+  }
+
+  .social-links li:nth-child(3) a:hover .fa-brands,
+  .social-links li:nth-child(3) a:hover span {
+    color: #fff;
+  }
+
+  .social-links li:nth-child(1) a:hover {
+    background: #db4437;
+  }
+
+  .social-links li:nth-child(1) a:hover::before {
+    background: #c1351d;
+  }
+
+  .social-links li:nth-child(1) a:hover::after {
+    background: #a52714;
+  }
+
+  .social-links li:nth-child(1) a:hover .fa-brands,
+  .social-links li:nth-child(1) a:hover span {
+    color: #fff;
+  }
+
+  .social-links li:nth-child(2) a:hover {
+    background: #24292f;
+  }
+
+  .social-links li:nth-child(2) a:hover::before {
+    background: #1b1f23;
+  }
+
+  .social-links li:nth-child(2) a:hover::after {
+    background: #0d1117;
+  }
+
+  .social-links li:nth-child(2) a:hover .fa-brands,
+  .social-links li:nth-child(2) a:hover span {
+    color: #fff;
+  }
+
+  .social-links li:nth-child(4) a:hover {
+    background: #555555;
+  }
+
+  .social-links li:nth-child(4) a:hover::before {
+    background: #3d3d3d;
+  }
+
+  .social-links li:nth-child(4) a:hover::after {
+    background: #1f1f1f;
+  }
+
+  .social-links li:nth-child(4) a:hover .fa-brands,
+  .social-links li:nth-child(4) a:hover span {
+    color: #fff;
   }
 }
